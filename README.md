@@ -1,3 +1,3 @@
-##ERD 
+#ERD 
 
-![Alt text](/ERD.jpg?raw=true "Title")
+![Alt text](/ERD.png "a title")
