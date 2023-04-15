@@ -94,7 +94,6 @@ button.truck-icon{
 
 .main {
   margin-left: 300px; /* Same as the width of the sidenav */
-  font-size: 28px; /* Increased text to enable scrolling */
   padding: 0px 10px;
   background-color: #f4f5f7;
 }
@@ -130,4 +129,18 @@ nav {
   display: flex;
 }
 
+input[type=text-form]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.main h1{
+  font-size: 30px;
+  padding-top: 100px;
+  padding-bottom: 30px;
+}
   

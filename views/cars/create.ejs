@@ -1,21 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+    <link rel="stylesheet" href="/style.css">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Car Management Dashboard</title>
+
+    <script src="https://unpkg.com/feather-icons"></script>
+
 </head>
 <body>
-    <h1>Input Data Product Baru</h1>
-    <form action="/cars" method="POST">
-        <label for="">Nama</label>
-        <input type="text" name="car_name" placeholder="Toyota"><br>
-        <label for="">Sewa Per Hari</label>
-        <input type="text" name="price" placeholder="1000000"><br>
-        <label for="">Ukuran</label>
-        <input type="text" name="size" placeholder="small"><br>
-        <button type="submit">Add</button>
-    </form>
+    <%- include ('../partials/sidebar') %>
+    <%- include ('../partials/navbar') %>
+
+    <div class="main">
+        <h1>Add New Car</h1>
+        <form action="/cars" method="POST">
+            <label class="form" for="">Nama</label>
+            <input  type="text-form" name="car_name" placeholder="Avanza"><br>
+            <label class="form"  for="">Sewa Per Hari</label>
+            <input type="text-form" name="price" placeholder="Rp 0,-"><br>
+            <label class="form"  for="">Ukuran</label>
+            <input type="text-form" name="size" placeholder="Small"><br>
+            <button type="submit">Add</button>
+        </form>
+      </div>  
+
+    <script>
+        feather.replace()
+    </script>
 </body>
 </html>
