@@ -93,21 +93,34 @@ button.truck-icon{
 
 .main {
   margin-left: 300px; /* Same as the width of the sidenav */
-  padding: 1%;
+  padding: 2%;
   background-color: #f4f5f7;
   height: 100%;
-  display: flex;
-  justify-content: space-between
+}
+
+.path{
+  padding: 10px 0px 40px 0px;
+}
+
+.path a{
+  color: black;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.path a:hover{
+  text-decoration: none;
+  color: black;
 }
 
 .main h1{
   font-size: 30px;
-  padding-top: 100px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 
 .main-top{
   display: flex;
+  justify-content: space-between;
 }
 
 .main-top-left{
@@ -137,6 +150,7 @@ button.size{
   cursor: pointer;
   font-size: 17px;
   font-weight: 700;
+  transition: 0.3s;
 }
 
 button.size:hover{
@@ -158,6 +172,19 @@ button.size:hover{
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+
+.form-box{
+  font-size: 12px;
+  padding: 30px 10px 30px 10px;
+  background-color: white;
+}
+
+.form-line{
+  display: flex;
+  justify-content: space-between;
+  border: 5px solid red;
+  padding: 20px;
 }
 
 nav {
@@ -186,7 +213,8 @@ nav {
 }
 
 input[type=text-form]{
-  width: 100%;
+  text-align: right;
+  width: 80%;
   padding: 12px 20px;
   margin: 8px 0;
   border: 1px solid #ccc;
