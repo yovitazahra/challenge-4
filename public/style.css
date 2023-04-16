@@ -1,9 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Helvetica;
-  }
-
+    font-family: IBM Plex Sans;
+}
 .square {
     width: 34px;
     height: 34px;
@@ -94,10 +93,68 @@ button.truck-icon{
 
 .main {
   margin-left: 300px; /* Same as the width of the sidenav */
-  padding: 0px 10px;
+  padding: 1%;
   background-color: #f4f5f7;
+  height: 100%;
+  display: flex;
+  justify-content: space-between
 }
 
+.main h1{
+  font-size: 30px;
+  padding-top: 100px;
+  padding-bottom: 30px;
+}
+
+.main-top{
+  display: flex;
+}
+
+.main-top-left{
+  float: left;
+
+}
+
+.main-top-left p{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.size-filter{
+  display: flex;
+  gap: 2%;
+  padding-top: 2%;
+}
+
+button.size{
+  border: 2px solid #AEB7E1;
+  color: #AEB7E1;
+  border-radius: 2px;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 12px;
+  gap: 10px;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+button.size:hover{
+  background-color: #CFD4ED;
+  border: 2px solid #0D28A6;
+  color: #0D28A6;
+}
+
+.add-car{
+  border-radius: 2px;
+  background-color: #0D28A6;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
@@ -106,7 +163,6 @@ button.truck-icon{
 nav {
   background-color: white;
   box-shadow: 0px 2px 8px 0px #0000000D;
-  color: #fff;
   height: 60px;
   padding: 0 20px;
   display: flex;
@@ -138,9 +194,5 @@ input[type=text-form]{
   box-sizing: border-box;
 }
 
-.main h1{
-  font-size: 30px;
-  padding-top: 100px;
-  padding-bottom: 30px;
-}
+
   
